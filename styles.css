@@ -20,6 +20,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 main{
@@ -182,6 +183,165 @@ ul li:hover{
 /* How to section */
 .how-to-container{
     width: 100%;
+    height: 645px;
+    background-color: #28284b;    
+}
+
+#how-to-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#how-to-title{
+    color: rgb(236, 236, 236);
+    text-align: center;
+    padding: 35px 20px; 
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+
+.title-how{
+    margin: 20px 0px;
+}
+
+.content{
+    color: #28284b;
+    width: 24%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 20px 30px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+}
+
+.sleep-tip{
+    font-size: 80px;
+    color: #28284b;
+    margin: 30px;
+}
+
+.btn-how-to{
+    width: 120px;
+    border: none;
+    background-color: #28284b;
+    color:rgb(230, 230, 230);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.btn-how-to:hover{
+    background-color: #4d4d91;
+    cursor: pointer;
+    color: rgb(221, 221, 221);
+}
+
+.how-icon-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 100px 0; 
+}
+
+.email{
+    padding: 10px 14px;
+    border: none;
+    width: 450px;
+    font-size: 22px;
+    border-radius: 5px;
+    height: 34px;
+}
+
+.btn-sub{
+    padding: 8px;
+    font-size: 24px;
+    background-color: #706fd3;
+    border: none;
+    color:rgb(230, 230, 230);
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 180px;
+    height: 56px;
+    transition: 0.2s;
+}
+
+.btn-sub:hover{
+    background-color: #28284b;
+    color: rgb(185, 185, 185);
+    cursor: pointer;
+}
+
+#about-section{
+    width: 100%;
+    height: auto;
+    background-color: #28284b;
+    padding: 0;
+    margin: 0;
+}
+
+#about{
+    display: flex;
+}
+
+#about-scroll{
+    color: rgb(230, 230, 230);
+    font-size: 33px;
+    letter-spacing: 2px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.about-img{
+    width: 40vw;
+    filter: grayscale(100%) brightness(60%);
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.about-text{
+    width: 80%;
+    color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+
+.about-text p {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.about-btn{
+    padding: 15px;
+    font-size: 20px;
+    background-color: #706fd3;
+    border: none;
+    color: rgb(230, 230, 230);
+    width: 180px;
+    margin-top: 30px;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+.about-btn:hover{
+    background-color: #38386d;
+    color: rgb(185, 185, 185);
+    cursor: pointer;
+}
+
+#downloads{
+    width: 100%;
     height: 500px;
-    background-color: #1d1d36;    
+    background-color: rgb(230, 230, 230);
 }
