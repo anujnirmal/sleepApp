@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #1d1d36;
@@ -18,6 +22,7 @@ header{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     display: flex;
     position: fixed;
+    flex-wrap: wrap;
     top: 0;
     left: 0;
     z-index: 2;
@@ -27,10 +32,14 @@ main{
     margin-top: 90px;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+
 #logo{
     display: flex;
-    color: #fff;
-    /* background-color: blue; */
+    color: rgb(230, 230, 230);
     align-items: center;
     width: 20%;
 }
@@ -54,12 +63,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: end;
-    width: 80%;
+    min-width: 80%;
 }
 
 ul {
     display: flex;
     margin-right: 40px;
+    justify-content: space-evenly;
 }
 
 ul li{
@@ -80,13 +90,13 @@ ul li:hover{
     padding-right: 0;
 }
 
+
 /* Main Body Banner */
 
 
 #banner{
     display: flex;
     width: 100%;
-    /* background-color: #fff; */
 }
 
 /* Main Download section in the banner */
@@ -166,6 +176,51 @@ ul li:hover{
     font-size: 20px;
     color: rgb(230, 230, 230);
 }
+
+
+
+ 
+@media only screen and (max-width: 700px) {
+    header{
+        height: 180px;
+    }
+   
+    #logo{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        transform: scale(1.3);
+    }
+
+    .logo-icon{
+        margin-left: 0px;
+    }
+
+    #phone-container{
+        visibility: hidden;
+    }
+
+    nav{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    ul li{
+        font-size: 23px; 
+        padding: 20px 20px; 
+    }
+
+    #banner{
+        margin-top: 190px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .banner-title{
+        
+    }
+} 
+
 
 
 /* Phone section */
