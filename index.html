@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@300;400;700&display=swap">
     <script src="https://kit.fontawesome.com/3889c71b28.js" crossorigin="anonymous"></script>
     <link rel="icon" href="/assets/icon.svg">
@@ -11,18 +11,19 @@
     <title>SleepApps</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="logo">
+            <img src="#"  id="header-img" alt="">
             <i class="fas fa-bed logo-icon"></i>
             <h1 class="company-name">Sleep<span class="colored-title">App</span></h1>
         </div>
-        <nav>
+        <nav id="nav-bar">
             <div class="nav-menu">
                 <ul>
-                    <li><a href="#banner">Home</a></li>
-                    <li><a href="#about-section">About</a></li>
-                    <li><a href="#downloads">Download</a></li>
-                    <li class="contact"><a href="#contact">Contact</a></li>
+                    <li class="home"><a class="nav-link" href="#banner">Home</a></li>
+                    <li><a class="nav-link" href="#about-section">About</a></li>
+                    <li><a class="nav-link" href="#downloads">Download</a></li>
+                    <li class="contact"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div> 
         </nav>
@@ -87,9 +88,9 @@
         </div> 
         <div id="email-container">
             <div id="email">
-                <form action="#">
-                    <input type="email"  class="email" placeholder="Enter your email"/>
-                    <input type="submit" class="btn-sub" value="Subscribe!">
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input type="email" id="email" class="email" placeholder="Enter your email" required />
+                    <input type="submit" id="submit" class="btn-sub" value="Subscribe!">
                 </form>
             </div>
         </div> 
@@ -124,9 +125,10 @@
             <div class="download-container">
                 <div class="download-text">
                     <div class="download-p">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In doloribus dolorem error neque ipsa sint minima totam cupiditate quidem quam accusamus quod reiciendis, voluptatem laborum unde quasi! Possimus, assumenda minus?</p>
+                        <video id="video" src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4" controls></video>
+                        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In doloribus dolorem error neque ipsa sint minima totam cupiditate quidem quam accusamus quod reiciendis, voluptatem laborum unde quasi! Possimus, assumenda minus?</p>
                         <br>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In doloribus dolorem error neque ipsa sint minima totam cupiditate quidem quam accusamus quod reiciendis, voluptatem laborum unde quasi! Possimus, assumenda minus?</p>    
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In doloribus dolorem error neque ipsa sint minima totam cupiditate quidem quam accusamus quod reiciendis, voluptatem laborum unde quasi! Possimus, assumenda minus?</p>     -->
                     </div>
                    </div>
                 <div class="download-options">
@@ -160,7 +162,7 @@
         <div id="contact">
             <div id="form-container">
                 <form action="#" class="form">
-                        <input type="text" class="form-control first-name" placeholder="name" required/>
+                    <input type="text" class="form-control first-name" placeholder="name" required />
                     <input type="email" class="form-control email-input" placeholder="email id" required />
                     <div class="comment">
                         <textarea name="" id="" cols="12" rows="10" class="form-control text-area" placeholder="your query"></textarea>
@@ -170,5 +172,6 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
